@@ -5,9 +5,6 @@ module.exports = {
     'header-max-length': [2, 'always', 50],
     'body-max-length': [2, 'always', 72],
     'footer-max-length': [2, 'always', 72],
-    'subject-tense': ['present-imperative'],
-    'body-tense': ['present-imperative'],
-    'footer-tense': ['present-imperative'],
     'scope-empty': [2, 'always'],
     'subject-case': [
       2,
