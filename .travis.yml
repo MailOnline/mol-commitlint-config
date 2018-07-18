@@ -1,0 +1,17 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
+script:
+  - yarn lint
+deploy:
+  - provider: script
+    skip-cleanup: true
+    script:
+      - yarn semantic-release
+    on:
+      branch: master
+
