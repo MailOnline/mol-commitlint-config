@@ -1,21 +1,21 @@
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Build Status](https://travis-ci.org/MailOnline/mol-commitlint-config.svg?branch=master)](https://travis-ci.org/MailOnline/mol-commitlint-config) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 # mol-commitlint-config
 [commitlint](https://github.com/marionebl/commitlint) configuration for [mol-conventional-changelog](https://github.com/MailOnline/mol-conventional-changelog)
 
 ## Setup
 
-``sh
+```sh
 # Install commitlint cli and mol commitlint config
 npm install --save-dev mol-commitlint-config @commitlint/cli
 
 # Configure commitlint to use mol commitlint config
 echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
-``
+```
 
 To lint commits before they are created you can use the 'commitmsg' hook as described [here](https://github.com/typicode/husky/blob/master/HOOKS.md#hooks)
 
-``json
+```json
 {
   "scripts": {
       "commitmsg": "commitlint -E GIT_PARAMS"
