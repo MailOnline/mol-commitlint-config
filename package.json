@@ -1,0 +1,34 @@
+{
+  "name": "mol-commitlint-config",
+  "version": "0.0.0-development",
+  "description": "Shareable commitlint config enforcing MOL conventional commits",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0",
+    "lint": "eslint ./",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:MailOnline/mol-commitlint-config.git"
+  },
+  "keywords": [
+    "mol-conventional-changelog",
+    "commitlint",
+    "commitlint-config"
+  ],
+  "author": "MailOnline <fe@mailonline.co.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MailOnline/mol-commitlint-config/issues"
+  },
+  "homepage": "https://github.com/MailOnline/mol-commitlint-config#readme",
+  "devDependencies": {
+    "eslint": "^5.1.0",
+    "eslint-config-mailonline": "^9.0.0",
+    "husky": "^0.14.3",
+    "semantic-release": "^15.8.0"
+  }
+}
