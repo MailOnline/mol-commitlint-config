@@ -10,7 +10,18 @@
 npm install --save-dev mol-commitlint-config @commitlint/cli
 
 # Configure commitlint to use mol commitlint config
-echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
+echo "module.exports = {extends: ['./node_modules/mol-commitlint-config']}" > commitlint.config.js
+```
+
+or in the package.json
+```json
+{ 
+ "commitlint": {
+    "extends": [
+      "./node_modules/mol-commitlint-config"
+    ]
+  }
+}
 ```
 
 To lint commits before they are created you can use the 'commitmsg' hook as described [here](https://github.com/typicode/husky/blob/master/HOOKS.md#hooks)
