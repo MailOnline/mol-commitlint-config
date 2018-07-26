@@ -4,11 +4,6 @@ module.exports = {
     'footer-leading-blank': [1, 'always'],
     'header-max-length': [2, 'always', 50],
     'scope-empty': [2, 'always'],
-    'subject-case': [
-      2,
-      'never',
-      ['sentence-case', 'start-case', 'pascal-case', 'upper-case']
-    ],
     'subject-empty': [2, 'never'],
     'subject-full-stop': [2, 'never', '.'],
     'type-case': [2, 'always', 'lower-case'],
