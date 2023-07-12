@@ -31,7 +31,7 @@
     "eslint-config-mailonline": "^9.0.0",
     "husky": "^0.14.3",
     "jest": "^23.4.1",
-    "semantic-release": "^15.8.0"
+    "semantic-release": "^21.0.2"
   },
   "jest": {
     "verbose": true,
